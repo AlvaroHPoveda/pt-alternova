@@ -13,6 +13,7 @@ const Item = ({ item }) => {
   const itemCounter = counter.find((product) => product.id === item.id);
   const dispatch = useDispatch();
   return (
+    //information listed
     <TouchableOpacity
       style={styles.container}
       activeOpacity={0.8}
@@ -36,6 +37,7 @@ const Item = ({ item }) => {
             <Text style={styles.textData}>{item.stock}</Text>
           </View>
         </View>
+        {/* buttons to add or remove from cart */}
         <View style={styles.buttonContainer}>
           <TouchableOpacity
             style={styles.button}

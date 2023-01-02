@@ -4,6 +4,7 @@ import { constants } from "../assets/enum";
 
 export default function ButtonGradient({ handleSignIn }) {
   return (
+    //custom button
     <TouchableOpacity onPress={handleSignIn} style={styles.container}>
       <LinearGradient
         colors={["#f1c44d", "#f2b53c", "#f3a52d"]}

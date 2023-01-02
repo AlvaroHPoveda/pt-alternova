@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { View, StyleSheet } from "react-native";
 import themeContext from "../context/ThemeContext";
-
+//custom component
 const LoginView = ({ children, style, typeContainer, ...restOfProps }) => {
   const themeCtext = useContext(themeContext);
   const textStyles = [

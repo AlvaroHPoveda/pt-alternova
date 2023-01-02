@@ -5,12 +5,15 @@ import { useSelector, useDispatch } from "react-redux";
 import { constants } from "../assets/enum";
 import { setEspecificValue } from "../redux/slices/counterSlice";
 
+//Screen where the product detail will be displayed
 const ProductDetail = ({ route }) => {
   const item = route.params;
+  //redux
   const counter = useSelector((state) => state.counter);
   const itemCounter = counter.find((product) => product.id === item.id);
   const dispatch = useDispatch();
   return (
+    //information listed
     <View style={styles.containerDetail}>
       <View style={styles.itemContainer}>
         <Image style={styles.image} source={{ uri: item.image }}></Image>
@@ -33,6 +36,7 @@ const ProductDetail = ({ route }) => {
             <Text style={styles.textData}>{item.stock}</Text>
           </View>
         </View>
+        {/* buttons to add or remove from cart */}
         <View style={styles.buttonContainer}>
           <TouchableOpacity
             style={styles.button}

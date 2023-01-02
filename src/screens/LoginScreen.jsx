@@ -24,13 +24,13 @@ import ButtonGradient from "../components/ButtonGradient";
 import SwitchNative from "../components/SwitchNative";
 
 import { constants, theme } from "../assets/enum";
-
+//application login screen
 const LoginScreen = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [mode, setMode] = useState(false);
   const navigation = useNavigation();
-
+//Firebase
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
 
@@ -51,7 +51,7 @@ const LoginScreen = () => {
         Alert.alert(error.message);
       });
   };
-
+//react native event listeners
   useEffect(() => {
     let eventListener = EventRegister.addEventListener(
       "changeTheme",

@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Text, StyleSheet } from "react-native";
 import { theme } from "../assets/enum";
 import themeContext from "../context/ThemeContext";
-
+//custom component
 const LoginText = ({ children, style, typeFont, ...restOfProps }) => {
   const themeCtext = useContext(themeContext);
   const textStyles = [

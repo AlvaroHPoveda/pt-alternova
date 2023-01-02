@@ -5,9 +5,10 @@ import themeContext from "../context/ThemeContext";
 import { EventRegister } from "react-native-event-listeners";
 
 import { constants } from "../assets/enum";
-
+//Bottom switch theme
 const SwitchNative = () => {
   const [mode, setMode] = useState(false);
+  //context
   const themeCtext = useContext(themeContext);
 
   return (
@@ -25,6 +26,7 @@ const SwitchNative = () => {
     </View>
   );
 };
+export default SwitchNative;
 
 const styles = StyleSheet.create({
   container: {
@@ -36,5 +38,3 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
 });
-
-export default SwitchNative;

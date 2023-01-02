@@ -10,8 +10,9 @@ import {
 import { getAllProducts } from "../api/data.api";
 import { constants } from "../assets/enum";
 import Item from "../components/Item";
-
+//screen where the products will be listed
 const HomeSreen = () => {
+  //product call
   const products = getAllProducts();
 
   return (

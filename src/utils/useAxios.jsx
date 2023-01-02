@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
+// API default url
 axios.defaults.baseURL = 'https://example.com';
 
+// Custom Hook Axios
 export const useAxios = (axiosParams) => {
     const [response, setResponse] = useState(undefined);
     const [error, setError] = useState('');

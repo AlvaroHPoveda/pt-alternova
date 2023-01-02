@@ -19,7 +19,7 @@ import { StatusBar } from "react-native";
 const Main = () => {
   const Stack = createNativeStackNavigator();
   const [mode, setMode] = useState(false);
-
+//react native event listeners
   useEffect(() => {
     let eventListener = EventRegister.addEventListener(
       "changeTheme",
